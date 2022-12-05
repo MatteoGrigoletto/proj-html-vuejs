@@ -3,9 +3,6 @@
         <!-- barra di navigazione per il cliente, contenente il proprio account e il carello -->
         <section class="user-bar">
             <UserBar/>
-        </section>
-        <!-- barra contenente la navigazione per accedere alle diverse pagine all'interno del sito -->
-        <section class="StorageBar">
             <StorageBar/>
         </section>
         <!-- hero -->
@@ -17,9 +14,9 @@
 </template>
 
 <script>
-import UserBar from './another-comp/UserBar.vue';
-import StorageBar from './another-comp/StorageBar.vue';
-import HeroHeader from './another-comp/HeroHeader.vue';
+import UserBar from './another-comp/header/UserBar.vue';
+import StorageBar from './another-comp/header/StorageBar.vue';
+import HeroHeader from './another-comp/header/HeroHeader.vue';
     export default {
         name:'AppHeader',
         components:{
@@ -32,4 +29,13 @@ import HeroHeader from './another-comp/HeroHeader.vue';
 
 <style lang="scss" scoped>
 
+.user-bar{
+    z-index: 40;
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+.hero{
+    padding-top: 90px;
+}
 </style>

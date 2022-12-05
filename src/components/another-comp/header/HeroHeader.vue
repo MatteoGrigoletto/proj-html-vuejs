@@ -21,7 +21,7 @@
 <style lang="scss" scoped>
 
 .bg-hero{
-    background-image: url(../../assets/brend/home1_slide_three_bg_2.jpg);
+    background-image: url(../../../assets/brend/home1_slide_three_bg_2.jpg);
     background-size: cover;
     color: white;
     position: relative;
@@ -38,6 +38,7 @@
         right: 1%;
         border-radius: 20px;
         box-shadow: 0px 0px 15px black;
+        z-index: 40;
     }
     &::before{
         position: absolute;
@@ -51,6 +52,7 @@
         right: 1%;
         border-radius: 20px;
         box-shadow: 0px 0px 15px black;
+        z-index: 40;
     }
    .text-hero{
     text-align: center;

@@ -1,7 +1,7 @@
 <template>
     <div class="container-70">
         <div class="logo">
-            <img src="../../assets/brend/classic_shop_logo_footer.png" alt="">
+            <img src="../../../assets/brend/classic_shop_logo_footer.png" alt="">
         </div>
         <div class="nav-bar">
             <nav>
