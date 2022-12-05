@@ -49,15 +49,6 @@ export const store = reactive({
             gender: 'woman dress',
         },
         {
-            img:  'src/assets/leather_gloves.jpg',
-            item: 'leather_gloves.',
-            type: 'Man',
-            brand: null,
-            rated: null,
-            price: '45 $',
-            gender: 'men gloves',
-        },
-        {
             img:  'src/assets/modern_black_leather_suit.jpg',
             item: 'modern black leather suit',
             type: 'Man, Jackets',
@@ -93,10 +84,15 @@ export const store = reactive({
             price: '47 $',
             gender: 'woman dress',
         },
-        
-
-
-
+        {
+            img:  'src/assets/leather_gloves.jpg',
+            item: 'leather_gloves.',
+            type: 'Man',
+            brand: null,
+            rated: null,
+            price: '45 $',
+            gender: 'men gloves',
+        },
     ]
 
 });

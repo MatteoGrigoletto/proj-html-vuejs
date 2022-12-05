@@ -4,8 +4,8 @@
             <h2>Brand New Arrivals</h2>
             <p>NEW COLLETION FROM NEW YORK</p>
             <div class="buttons-hero">
-                <button>VIEW ALL</button>
-                <button>LOOKBOOK</button>
+                <button class="my-button">VIEW ALL</button>
+                <button class="my-button">LOOKBOOK</button>
             </div>
         </div>
     </div>
@@ -68,18 +68,8 @@
     }
     .buttons-hero{
     padding: 30px 0px;
-    
-    button{
-        background-color: transparent;
-        color: white;
-        border: 1px solid white;
-        border-radius: 20px;
-        padding: 10px 20px;
-        margin: 0px 10px;
-        }
     }
 }
-
 }
 
 </style>
