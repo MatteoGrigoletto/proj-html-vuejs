@@ -12,6 +12,9 @@
         <section class="discount">
             <ItemDiscount/>
         </section>
+        <section class="NewProducts">
+            <NewArrivals :newProducts = 'store.products'/>
+        </section>
     </main>
 </template>
 
@@ -22,6 +25,7 @@ import FeaturedProducts from './another-comp/main/FeaturedProducts.vue';
 import CollectionsStore from './another-comp/main/CollectionsStore.vue';
 import BestSellers from './another-comp/main/BestSellers.vue';
 import ItemDiscount from './another-comp/main/ItemDiscount.vue';
+import NewArrivals from './another-comp/main/NewArrivals.vue';
     export default {
         name:'AppMain',
         data(){
@@ -34,6 +38,8 @@ import ItemDiscount from './another-comp/main/ItemDiscount.vue';
             CollectionsStore,
             BestSellers,
             ItemDiscount,
+            NewArrivals,
+
         }
     }
 </script>

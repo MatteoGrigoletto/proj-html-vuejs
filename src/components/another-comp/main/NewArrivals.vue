@@ -4,19 +4,19 @@
         title="Best Seller"
         info="Must have products from out top sellers"/>
         <div class="wrapper">
-        <section id="section3">
-            <a href="#section4" class="arrow__btn">‹</a>
+        <section id="section1">
+            <a href="#section2" class="arrow__btn">‹</a>
             <div class="item" v-for="index in 5">
-                <img  :src="product[index].img" alt="">
+                <img  :src="newProducts[index].img" alt="">
         </div>
-            <a href="#section4" class="arrow__btn">›</a>
+            <a href="#section2" class="arrow__btn">›</a>
         </section>
-        <section id="section4">
-            <a href="#section3" class="arrow__btn">‹</a>
+        <section id="section2">
+            <a href="#section1" class="arrow__btn">‹</a>
             <div class="item" v-for="index in 5">
-                <img :src="product[index + 4].img" alt="">
+                <img :src="newProducts[index + 4].img" alt="">
         </div>
-            <a href="#section3" class="arrow__btn">›</a>
+            <a href="#section1" class="arrow__btn">›</a>
         </section>
 
         </div>
@@ -30,7 +30,7 @@
     // HO IMPORTANTO UN COMPONENTE ALL'INTERNO DI UN  ALTRO COMPONENTE, COMPONENTE PER INSERIRE IL TITOLO DELLA SECTION
     import TitleSection from './TitleSection.vue';
         export default {
-            name:'BestSellers',
+            name:'NewArrivals',
         
         data(){
             return{
@@ -38,7 +38,7 @@
             }
         }, 
         props:{
-            product: Object,
+            newProducts: Object,
         },
         components:{
             TitleSection,
