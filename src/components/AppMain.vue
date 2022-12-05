@@ -1,6 +1,6 @@
 <template>
-    <div v-for="item in  store.products">
-        <img :src="item.img" alt="">
+    <div >
+     
     
     </div>
 </template>
