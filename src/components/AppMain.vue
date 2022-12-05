@@ -21,6 +21,17 @@
         <section class="blog">
             <FromBlog/>
         </section>
+        <section class="evidence container-70" >
+            <FeaturedItems
+            :items="store.products"/>
+            <SaleItems
+            :items="store.products"/>
+            <TopItems 
+            :items="store.products"/>
+            <LatestReviews
+            :items="store.products"/>
+        </section>
+
     </main>
 </template>
 
@@ -35,6 +46,10 @@ import ItemDiscount from './another-comp/main/ItemDiscount.vue';
 import NewArrivals from './another-comp/main/NewArrivals.vue';
 import TestimonialComment from './another-comp/main/TestimonialComment.vue';
 import FromBlog from './another-comp/main/FromBlog.vue';
+import FeaturedItems from './another-comp/main/FeaturedItems.vue';
+import SaleItems from './another-comp/main/SaleItems.vue';
+import TopItems from './another-comp/main/TopItems.vue';
+import LatestReviews from './another-comp/main/LatestReviews.vue';
     export default {
         name:'AppMain',
         data(){
@@ -50,10 +65,22 @@ import FromBlog from './another-comp/main/FromBlog.vue';
             NewArrivals,
             TestimonialComment,
             FromBlog,
+            FeaturedItems,
+            SaleItems,
+            TopItems,
+            LatestReviews,
         }
     }
 </script>
 
 <style lang="scss" scoped>
 
+.evidence{
+    display: flex;
+
+    >div{
+        width: calc(100% / 4 - 20px);
+        margin: 10px;
+    }
+}
 </style>

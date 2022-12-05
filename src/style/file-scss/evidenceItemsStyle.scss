@@ -1,0 +1,34 @@
+// FOGLIO DI STILE ESCLUSIVO PER LE LISTE IN EVIDENZA ----- AppMain.vue --> section class= "evidence"
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    position: relative;
+
+    &::after{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 1px ;
+        bottom: 0%;
+        background-color: var(--position_absolute_color);
+    }
+
+    .evidence-text{
+        > *{
+            padding: 5px 0px;
+        }
+}
+    img{
+        height: 60px;
+    }
+}
+.bg-blue{
+color: blue;
+}
+.bg-grey{
+color: rgb(218, 209, 209);
+}

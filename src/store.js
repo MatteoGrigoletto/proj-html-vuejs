@@ -112,7 +112,7 @@ export const store = reactive({
             item: 'spring printed dress',
             type: 'Woman, ',
             brand: 'by Admin',
-            rated: null,
+            rated: 5,
             price: '47 $',
             gender: 'woman dress',
             featured: false,
@@ -125,7 +125,7 @@ export const store = reactive({
             item: 'leather_gloves.',
             type: 'Man',
             brand: null,
-            rated: null,
+            rated: 5,
             price: '45 $',
             gender: 'men gloves',
             featured: false,
@@ -133,6 +133,35 @@ export const store = reactive({
             topRated: true,
             latestReviews: true,
         },
+    ],
+    brands: [
+        {
+            name:'forest',
+            logo:'src/assets/brend/b_logotype_1.png'
+        },
+        {
+            name:'badge',
+            logo:'src/assets/brend/b_logotype_2.png'
+        },
+        {
+            name:'beard fashion',
+            logo:'src/assets/brend/b_logotype_3.png'
+        },
+        {
+            name:'hype',
+            logo:'src/assets/brend/b_logotype_4.png'
+        },
+        {
+            name:'a & q',
+            logo:'src/assets/brend/b_logotype_5.png'
+        },
+        {
+            name:'authentic',
+            logo:'src/assets/brend/b_logotype_6.png'
+        },
+        {
+            name:'the yard',
+            logo:'src/assets/brend/b_logotype_7.png'
+        },
     ]
-
 });
