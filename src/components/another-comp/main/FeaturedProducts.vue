@@ -1,10 +1,9 @@
 <template>
     <div class="container-70">
         <div class="">
-            <div class="title-section">
-                <h2>Featured Products</h2>
-                <p>Must have products from our top sellers</p>
-            </div>
+           <TitleSection 
+           title ="Featured Products"
+           info="Must have products from our top sellers"/>
             <div class="gender-selector">
                 <button>Men</button>
                 <button>Women</button>
@@ -28,6 +27,8 @@
 
 <script>
 import {store} from '../../../store';
+// HO IMPORTANTO UN COMPONENTE ALL'INTERNO DI UN  ALTRO COMPONENTE, COMPONENTE PER INSERIRE IL TITOLO DELLA SECTION
+import TitleSection from './TitleSection.vue';
 
     export default {
         name:'FeaturedProducts',
@@ -35,6 +36,9 @@ import {store} from '../../../store';
             return{
                 store,
             }
+        },
+        components:{
+            TitleSection,
         }    
     }
 </script>
@@ -45,14 +49,7 @@ import {store} from '../../../store';
 
     div{
         text-align: center;
-        .title-section{
-            padding: 50px 0px;
-
-            h2{
-                font-size: 30px ;
-            }
-
-        }
+        
         .gender-selector{
             padding: 30px 0px;
             button{

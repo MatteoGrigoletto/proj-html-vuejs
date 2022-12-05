@@ -1,5 +1,8 @@
 <template>
     <div class="container-70">
+        <TitleSection
+        title="Best Seller"
+        info="Must have products from out top sellers"/>
         <div class="wrapper">
         <section id="section4">
             <a href="#section5" class="arrow__btn">‹</a>
@@ -23,6 +26,9 @@
     
     <script>
     import {store} from '../../../store';
+
+    // HO IMPORTANTO UN COMPONENTE ALL'INTERNO DI UN  ALTRO COMPONENTE, COMPONENTE PER INSERIRE IL TITOLO DELLA SECTION
+    import TitleSection from './TitleSection.vue';
         export default {
             name:'BestSellers',
         
@@ -33,6 +39,9 @@
         }, 
         props:{
             product: Object,
+        },
+        components:{
+            TitleSection,
         }
         }
     </script>
