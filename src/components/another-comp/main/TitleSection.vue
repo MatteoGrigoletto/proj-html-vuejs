@@ -29,7 +29,7 @@
         height: 2px;
         top: 50%;
         right: 15%;
-        background-color: rgb(179, 176, 176);
+        background-color: var(--position_absolute_color);
     }
     &::before{
         position: absolute;
@@ -38,7 +38,7 @@
         height: 2px;
         top: 50%;
         left: 15%;
-        background-color: rgb(179, 176, 176);
+        background-color: var(--position_absolute_color);
     }
     
     h2{
