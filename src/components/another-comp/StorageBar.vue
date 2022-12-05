@@ -39,6 +39,7 @@
     .logo{
         img{
             width: 200px;
+            filter: invert(100%);
         }
     }
     .nav-bar{
@@ -64,7 +65,7 @@
                     margin: 0px 10px;
                     padding: 5px 10px;
                     border-radius: 20px;
-                    background-color: rgb(69, 159, 195);
+                    background-color: var(--header_bg_button);
                     color: white;
                 }
             }
