@@ -14,8 +14,8 @@
                     <li><a href="#">Elements <i class="fa-solid fa-chevron-down"></i></a></li>
                 </ul>
                 <div>
-                    <button>Shop Now</button>
-                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                    <button class="my-button">Shop Now</button>
+                    <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
                 
             </nav>
@@ -36,6 +36,7 @@
 .container-70{
     display: flex;
     justify-content: space-between;
+    padding: 20px 0px;
     .logo{
         img{
             width: 200px;
@@ -50,7 +51,13 @@
                 list-style: none;
 
                 li{
-                    padding: 10px;
+                    padding: 20px 20px;
+
+                    &:hover{
+                        background-color: rgb(248, 243, 243);
+                        color: var(--header_bg_button);
+                        border-radius: 20px;
+                    }
                     a{
                         text-decoration: none;
                         color: inherit;
@@ -59,13 +66,14 @@
             }
             div{
                 padding: 10px;
-
-                button{
-                    margin: 0px 10px;
-                    padding: 5px 10px;
-                    border-radius: 20px;
+                .my-button{
                     background-color: var(--header_bg_button);
-                    color: white;
+                }
+                .btn-search{
+                    background-color: transparent;
+                    border:none;
+                    padding: 10px;
+                    border-radius: 100% ;
                 }
             }
         }
