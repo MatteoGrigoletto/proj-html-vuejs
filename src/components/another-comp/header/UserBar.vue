@@ -32,18 +32,35 @@
 .container-70{
     display: flex;
     justify-content: space-between;
+    position: relative;
 
+    &::after{
+        position: absolute;
+        content: '';
+        width: 150%;
+        height: 1px;
+        bottom: 0%;
+        left: -25%;
+        background-color: var(--position_absolute_color);
+
+    }
     .social{
-        
+        font-size: 20px;
         i{
-            padding: 10px;
+            padding: 20px 20px 20px 0px;
         }
     }
     .user-account{
         display: flex;
 
         div{
-            padding: 10px;
+
+            button{
+                padding: 20px 40px;
+                border: none;
+                background-color: transparent;
+                border-right: 1px solid var(--position_absolute_color);
+            }
         }
 
     }
