@@ -40,7 +40,7 @@
         right: 1%;
         border-radius: 20px;
         box-shadow: 0px 0px 15px black;
-        z-index: 40;
+        z-index: 99;
     }
     &::before{
         position: absolute;
@@ -57,7 +57,7 @@
         right: 1%;
         border-radius: 20px;
         box-shadow: 0px 0px 15px black;
-        z-index: 40;
+        z-index: 99;
     }
    .text-hero{
     text-align: center;

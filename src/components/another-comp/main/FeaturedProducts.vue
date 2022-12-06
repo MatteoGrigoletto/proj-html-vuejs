@@ -14,6 +14,7 @@
             <div class="card" v-for="item in store.products" v-show="item.gender == 'men dress' ">
                 <div class="img-card">
                     <img :src="item.img" alt="">
+                    <span class="radiant"></span>
                 </div>
                <div class="text-card">
                 <h5>{{item.item}}</h5>
@@ -48,8 +49,7 @@ import TitleSection from './TitleSection.vue';
 .container-70{
 
     div{
-        text-align: center;
-        
+        text-align: center;    
         .gender-selector{
             padding: 30px 0px;
             button{
@@ -67,10 +67,17 @@ import TitleSection from './TitleSection.vue';
         margin: 5px;
         .img-card{
             height: 440px;
+            position: relative;
 
             img{
                 height: 100%;
                 object-fit: cover;
+            }
+            span{
+                text-align: center;
+                line-height: 440px;
+                color: white;
+                font-size: 40px;
             }
         }
         .text-card{
@@ -79,6 +86,37 @@ import TitleSection from './TitleSection.vue';
             }
         }
     }
+}
+
+.radiant{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(#e66465, #9198e5);
+    opacity: 0.7;
+    display: none; 
+}
+.radiant::before{
+    position: absolute;
+    content: '';
+    height: 80px;
+    width: 80px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(30, 29, 29);
+    border-radius: 50%;
+    font: var(--fa-font-solid);
+    content: "\f007";
+    opacity: 1;
+    line-height: 80px;
+    font-size: 20px;
+}
+.img-card:hover .radiant{
+        display: block;
 }
 
 </style>
