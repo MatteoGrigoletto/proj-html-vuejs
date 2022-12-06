@@ -18,7 +18,6 @@
 <style lang="scss" scoped>
 
 .title-section{
-    padding: 50px 0px;
     position: relative;
     text-align: center;
 

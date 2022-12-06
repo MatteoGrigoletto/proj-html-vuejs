@@ -1,8 +1,8 @@
 <template>
     <div class="container-70">
         <TitleSection
-        title="Best Seller"
-        info="Must have products from out top sellers"/>
+        title="New Arrivals"
+        info="Brand new products from top designers"/>
         <div class="wrapper">
         <section id="section1">
             <a href="#section2" class="arrow__btn">‹</a>
@@ -48,8 +48,9 @@
     
     <style lang="scss" scoped>
     
-    .container-70{
-        padding: 100px 0px;
+    .wrapper{
+        padding-top: 50px;
     }
+    
     @import '../../../style/file-scss/slider.scss';
     </style>

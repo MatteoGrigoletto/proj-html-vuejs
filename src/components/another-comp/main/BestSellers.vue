@@ -48,8 +48,8 @@
     
     <style lang="scss" scoped>
     
-    .container-70{
-        padding: 100px 0px;
+    .wrapper{
+        padding-top: 50px;
     }
     @import '../../../style/file-scss/slider.scss';
     </style>

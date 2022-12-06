@@ -75,8 +75,12 @@ import LatestReviews from './another-comp/main/LatestReviews.vue';
 
 <style lang="scss" scoped>
 
+section{
+    padding: 60px 0px;
+}
 .evidence{
     display: flex;
+    padding: 60px 0px;
 
     >div{
         width: calc(100% / 4 - 20px);

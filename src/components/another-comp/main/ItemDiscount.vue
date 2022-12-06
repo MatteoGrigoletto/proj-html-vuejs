@@ -27,7 +27,6 @@
 
 .offers{
     background-color: azure;
-    padding: 100px 0px;
     .container-70{
         display: flex;
         

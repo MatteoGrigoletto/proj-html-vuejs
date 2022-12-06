@@ -60,7 +60,7 @@ import TitleSection from './TitleSection.vue';
 }
 .preview{
     display: flex;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
     .card{
         width: calc(100% /4 - 10px) ;
         height: 500px;
