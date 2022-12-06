@@ -63,8 +63,19 @@
             border: none;
         }
     }
-
-
 }
 
+@media screen and (max-width: 1900px){
+    .email-logo, .email-text{
+        display: none;
+    }
+
+    .sloat-email{
+        width: 100%;
+        
+        form{
+            text-align: center;
+        }
+    }
+}
 </style>

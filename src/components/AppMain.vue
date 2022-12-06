@@ -83,4 +83,11 @@ section{
         margin: 10px;
     }
 }
+
+
+@media screen and (max-width: 1900px){
+    .evidence{
+        display: none;
+    }
+}
 </style>

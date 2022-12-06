@@ -40,4 +40,6 @@ import HeroHeader from './another-comp/header/HeroHeader.vue';
 .hero{
     padding-top: 90px;
 }
+
+
 </style>

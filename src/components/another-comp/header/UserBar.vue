@@ -65,4 +65,15 @@
 
     }
 }
+
+@media screen and (max-width: 1900px){
+
+    .social{
+        display: none;
+    }
+    .user-account{
+        width: 100%;
+        justify-content: center;
+    }
+}
 </style>

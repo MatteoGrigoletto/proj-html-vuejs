@@ -1,6 +1,6 @@
 <template>
     <div class="container-70">
-        <div>
+        <div class="all-info">
             <div class="brend-img">
                 <img src="../../../assets/brend/classic_shop_logo_footer.png" alt="">
             </div>
@@ -22,7 +22,7 @@
                 <i class="fa-brands fa-youtube"></i>
             </div>
         </div>
-        <TopItems
+        <TopItems class="top-items"
         :items="store.products"/>
         <div class="posts">
             <h3>RECENT POSTS</h3>
@@ -116,5 +116,23 @@ import TopItems from '../main/TopItems.vue';
             background-color: var(--position_absolute_color);
         }
     }
+}
+
+@media screen and (max-width: 1900px ){
+
+.container-70{
+justify-content: center;
+
+    .brend-img{
+        display: none;
+    }
+    .info-brend, .social-brend{
+        width: 100%;
+        text-align: center;
+    }
+}
+.top-items, .posts, .tags{
+    display: none;
+}
 }
 </style>

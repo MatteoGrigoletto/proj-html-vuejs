@@ -26,6 +26,8 @@
     color: white;
     position: relative;
 
+
+    // icone  a destra della hero
     &::after{
         position: absolute;
         content: " Demos ";
@@ -77,4 +79,11 @@
 }
 }
 
+
+@media screen and (max-width: 1900px) {
+
+ .bg-hero{
+    display: none;     
+}
+}
 </style>

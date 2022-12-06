@@ -13,13 +13,11 @@
                     <li><a href="#">News</a></li>
                     <li><a href="#">Elements <i class="fa-solid fa-chevron-down"></i></a></li>
                 </ul>
-                <div>
+                <div class="btn-box">
                     <button class="my-button">Shop Now</button>
                     <button class="btn-search"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
-                
+                </div>    
             </nav>
-
         </div>
     </div>
 </template>
@@ -78,5 +76,20 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 1900px) {
+  
+.container-70{
+    flex-direction: column;
+    align-items: center;
+
+    .btn-box{
+        display: none;
+    }
+}
+i{
+    display: none;
+}
 }
 </style>
