@@ -52,12 +52,13 @@ import TitleSection from './TitleSection.vue';
 
 .container-70{
     position: relative;
+
     &::after{
         position: absolute;
         content: '';
-        height: 2px;
-        width: 1900px;
-        left: -200px;
+        height: 1px;
+        width: 140%;
+        left:  -20%;
         background-color: var(--position_absolute_color);
     }
     .container-blog{
