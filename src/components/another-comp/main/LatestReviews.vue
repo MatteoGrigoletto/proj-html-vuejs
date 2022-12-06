@@ -7,7 +7,7 @@
                     <p>{{item.item}}</p>
                     <i v-for="index in 5" class="fa-solid fa-star" 
                         :class="item.rated >= index ? 'bg-blue' : 'bg-grey'"></i>
-                    <p>{{item.price}}</p>
+                    <p>{{item.brand}}</p>
                 </div>
                 <div class="evidence-img">
                     <img :src="item.img" alt="">

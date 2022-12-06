@@ -34,6 +34,7 @@ import HeroHeader from './another-comp/header/HeroHeader.vue';
     position: fixed;
     width: 100%;
     background-color: white;
+    border-bottom: 1px solid var(--position_absolute_color);
 }
 .hero{
     padding-top: 90px;

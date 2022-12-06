@@ -124,7 +124,7 @@ export const store = reactive({
             img:  'src/assets/leather_gloves.jpg',
             item: 'leather_gloves.',
             type: 'Man',
-            brand: null,
+            brand: 'by BirdMan',
             rated: 5,
             price: '45 $',
             gender: 'men gloves',

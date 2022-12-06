@@ -28,10 +28,12 @@
 
     &::after{
         position: absolute;
-        content: ' Demos';
+        content: " Demos ";
         text-align: center;
+        line-height: 70px;
         width: 70px;
         height: 70px;
+        font-weight: bold;
         background-color: white;
         color:black;
         top: -1%;
@@ -42,12 +44,15 @@
     }
     &::before{
         position: absolute;
-        content: 'On Sale ';
+        content: ' $ 39 ';
         text-align: center;
+        line-height: 70px;
         width: 70px;
         height: 70px;
+        font-weight: bold;
+        color: green;
         background-color: white;
-        color: black;
+        font-size: 30px;
         top: 11%;
         right: 1%;
         border-radius: 20px;
