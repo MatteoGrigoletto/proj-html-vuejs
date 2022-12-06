@@ -5,11 +5,16 @@
     <section class="email-subscribe">
         <EmailSubscribe/>
     </section>
+    <section class="site-information">
+        <PageInformation/>
+    </section>
 </template>
 
 <script>
 import BrendSection from './another-comp/footer/BrendSection.vue';
 import EmailSubscribe from './another-comp/footer/EmailSubscribe.vue';
+import PageInformation from './another-comp/footer/PageInformation.vue';
+
 
     export default {
         name:'AppFooter',
@@ -17,6 +22,7 @@ import EmailSubscribe from './another-comp/footer/EmailSubscribe.vue';
         components:{
             BrendSection,
             EmailSubscribe,
+            PageInformation,
         }
     }
 </script>
@@ -25,6 +31,7 @@ import EmailSubscribe from './another-comp/footer/EmailSubscribe.vue';
 
 section{
     padding: 60px 0px;
+    color: white;
 }
 .brend-section{
     background-color: var(--bg_brend_section);
@@ -32,6 +39,9 @@ section{
 }
 .email-subscribe{
     background-color: var(--bg_email_section);
+}
+.site-information{
+    background-color: var(--bg_information_section);
 }
 
 </style>

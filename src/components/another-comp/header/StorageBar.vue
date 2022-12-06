@@ -1,7 +1,7 @@
 <template>
     <div class="container-70">
         <div class="logo">
-            <img src="../../../assets/brend/classic_shop_logo_footer.png" alt="">
+            <img src="../../../assets/brend/classic_shop_logo2x.png" alt="">
         </div>
         <div class="nav-bar">
             <nav>
@@ -39,7 +39,6 @@
     .logo{
         img{
             width: 200px;
-            filter: invert(100%);
         }
     }
     .nav-bar{

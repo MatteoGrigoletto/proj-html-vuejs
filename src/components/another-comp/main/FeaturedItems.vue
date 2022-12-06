@@ -2,7 +2,7 @@
     <div>
         <div>
             <h3>FEATURED</h3>
-            <div v-for="item in items"  v-show="item.featured === true " class="card">
+            <div v-for="item in store.products"  v-show="item.featured === true " class="card">
                 <div class="evidence-text">
                     <p>{{item.item}}</p>
                     <i v-for="index in 5" class="fa-solid fa-star" 
@@ -18,10 +18,13 @@
 </template>
 
 <script>
+import {store} from '../../../store';
     export default {
-        name:'FeaturedItems',
-        props:{
-            items: Object,
+        name:'TopItems',
+        data(){
+            return{
+                store,
+            }
         }
     }
 </script>

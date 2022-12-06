@@ -22,14 +22,10 @@
             <FromBlog/>
         </section>
         <section class="evidence container-70" >
-            <FeaturedItems
-            :items="store.products"/>
-            <SaleItems
-            :items="store.products"/>
-            <TopItems 
-            :items="store.products"/>
-            <LatestReviews
-            :items="store.products"/>
+            <FeaturedItems/>
+            <SaleItems/>
+            <TopItems/>
+            <LatestReviews/>
         </section>
 
     </main>

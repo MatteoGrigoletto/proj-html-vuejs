@@ -1,9 +1,8 @@
 <template>
     <div >
-
         <div>
             <h3>ON SALE</h3>
-            <div v-for="item in items"  v-show="item.onSale === true " class="card">
+            <div v-for="item in store.products"  v-show="item.onSale === true " class="card">
                 <div class="evidence-text">
                     <p>{{item.item}}</p>
                     <i v-for="index in 5" class="fa-solid fa-star" 
@@ -19,10 +18,13 @@
 </template>
 
 <script>
+import {store} from '../../../store';
     export default {
-        name:'SaleItems',
-        props:{
-            items: Object,
+        name:'TopItems',
+        data(){
+            return{
+                store,
+            }
         }
     }
 </script>
