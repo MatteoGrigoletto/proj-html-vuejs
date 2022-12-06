@@ -30,11 +30,12 @@ import HeroHeader from './another-comp/header/HeroHeader.vue';
 <style lang="scss" scoped>
 
 .user-bar{
-    z-index: 40;
+    z-index: 80;
     position: fixed;
     width: 100%;
-    background-color: white;
+    background: var(--header_bg_gradient);
     border-bottom: 1px solid var(--position_absolute_color);
+    
 }
 .hero{
     padding-top: 90px;
