@@ -24,8 +24,16 @@
         </div>
         <TopItems
         :items="store.products"/>
-        <div>ciao</div>
-        <div>ciao</div>
+        <div class="posts">
+            <h3>RECENT POSTS</h3>
+            <div v-for="post in store.posts" class="post">
+                <p><i class="fa-solid fa-chevron-right"></i> {{post.text}}</p>
+            </div>
+        </div>
+        <div class="tags">
+            <h3>TAGS</h3>
+            <button v-for="tag in store.tags" class="single-tag">{{tag}}</button>
+        </div>
     </div>
 </template>
 
@@ -76,6 +84,36 @@ import TopItems from '../main/TopItems.vue';
                 padding: 0px 10px;
                 font-size: 20px;
             }
+        }
+    }
+}
+.posts{
+
+    .post{
+        padding:14px 0px;
+        position: relative;
+
+        &::after{
+            position: absolute;
+            content: '';
+            width: 80%;
+            height: 1px;
+            bottom: -10%;
+            background-color: var(--position_absolute_color);
+        }
+
+    }
+}
+.tags{
+    .single-tag{
+        padding: 10px 15px;
+        margin: 3px;
+        background-color: transparent;
+        color: white;
+        border-color: white;
+        
+        &:hover{
+            background-color: var(--position_absolute_color);
         }
     }
 }

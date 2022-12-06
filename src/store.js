@@ -163,5 +163,55 @@ export const store = reactive({
             name:'the yard',
             logo:'src/assets/brend/b_logotype_7.png'
         },
+    ],
+    posts: [
+        {
+            name:'Antonio',
+            text:'Aenean labortis sapien enim viverra'
+        },
+        {
+            name:'Federico',
+            text:'Duis ac massa semper macimus'
+        },
+        {
+            name:'Francesca',
+            text:'Nncs femint nulla eu husto sem id'
+        },
+        {
+            name:'Giulia',
+            text:'Aliquam posuera magna eget nibh'
+        },
+        {
+            name:'Samuele',
+            text:'Cras ac nulla ac consecte rutrum'
+        },
+        {
+            name:'Nicholas',
+            text:'Fusce mattis nunc ut aliquam'
+        }
+    ],
+    tags: [
+        'Black',
+        'boots',
+        'Brown',
+        'Casual',
+        'D&G',
+        'Fabric',
+        'flowers',
+        'Grey',
+        'hat',
+        'Hipster',
+        'line',
+        'Multi-porpose',
+        'New york',
+        'Outdoors',
+        'red',
+        'responsive',
+        'summer',
+        'sweater',
+        'Travel',
+        'Warm',
+        'white',
+        'winter',
     ]
 });
