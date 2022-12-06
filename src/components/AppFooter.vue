@@ -8,13 +8,16 @@
     <section class="site-information">
         <PageInformation/>
     </section>
+    <section class="payment">
+        <PaymentSection/>
+    </section>
 </template>
 
 <script>
 import BrendSection from './another-comp/footer/BrendSection.vue';
 import EmailSubscribe from './another-comp/footer/EmailSubscribe.vue';
 import PageInformation from './another-comp/footer/PageInformation.vue';
-
+import PaymentSection from './another-comp/footer/PaymentSection.vue';
 
     export default {
         name:'AppFooter',
@@ -23,6 +26,7 @@ import PageInformation from './another-comp/footer/PageInformation.vue';
             BrendSection,
             EmailSubscribe,
             PageInformation,
+            PaymentSection,
         }
     }
 </script>
@@ -42,6 +46,9 @@ section{
 }
 .site-information{
     background-color: var(--bg_information_section);
+}
+.payment{
+    background-color: var(--bg_payment_section);
 }
 
 </style>
