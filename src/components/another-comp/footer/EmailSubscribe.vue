@@ -65,11 +65,31 @@
     }
 }
 
-@media screen and (max-width: 1900px){
+//MEDIA QUERIES
+
+@media screen and (max-width:800px){
     .email-logo, .email-text{
         display: none;
     }
+    .sloat-email{
+        width: 100%;
+        
+        form{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
 
+            > *{
+                margin: 10px 0px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:801px) and (max-width: 1900px){
+    .email-logo, .email-text{
+        display: none;
+    }
     .sloat-email{
         width: 100%;
         

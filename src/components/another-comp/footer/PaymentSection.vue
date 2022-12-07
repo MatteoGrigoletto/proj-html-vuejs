@@ -27,4 +27,14 @@
     }
 }
 
+// MEDIA QUERIES
+
+@media screen and (max-width:1200px){
+    .copyright{
+        
+        p{
+            display: none;
+        }
+    }
+}
 </style>

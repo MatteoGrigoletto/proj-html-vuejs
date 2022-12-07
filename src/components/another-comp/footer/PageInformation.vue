@@ -118,21 +118,23 @@ import TopItems from '../main/TopItems.vue';
     }
 }
 
+// MEDIA QUERIES
+
 @media screen and (max-width: 1900px ){
-
-.container-70{
-justify-content: center;
-
-    .brend-img{
+    .container-70{
+        justify-content: center;
+        .all-info{
+            width: 100%;
+            .brend-img{
+                display: none;
+            }
+            .info-brend, .social-brend{
+                text-align: center;
+            }
+        }
+    .top-items, .posts, .tags{
         display: none;
+        }
     }
-    .info-brend, .social-brend{
-        width: 100%;
-        text-align: center;
-    }
-}
-.top-items, .posts, .tags{
-    display: none;
-}
 }
 </style>

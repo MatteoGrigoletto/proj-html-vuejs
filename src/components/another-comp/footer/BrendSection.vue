@@ -22,14 +22,12 @@ import {store} from '../../../store';
 </script>
 
 <style lang="scss" scoped>
-
 .container-70{
 text-align: center;
 
 h2{
     color: var(--color_brend_section);
 }
-
     .container-logo{
         display: flex;
 
@@ -37,9 +35,20 @@ h2{
             width: calc(100% / 7 - 20px);
             margin: 10px;
         }
-
     }
-
 }
 
+//MEDIA QUERIES
+
+@media screen and (max-width:1200px){
+    .container-70{
+        .container-logo{
+            flex-wrap: wrap;
+            justify-content: center;
+            .logo{
+                width: calc(100% / 3 - 20px);
+            }
+        }
+    }
+}
 </style>

@@ -78,6 +78,8 @@
     }
 }
 
+// MEDIA QUERIES
+
 @media screen and (max-width: 1900px) {
   
 .container-70{

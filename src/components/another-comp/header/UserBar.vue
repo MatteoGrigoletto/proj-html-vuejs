@@ -66,7 +66,28 @@
     }
 }
 
-@media screen and (max-width: 1900px){
+// MEDIA QUERIES
+@media screen and (max-width:800px){
+    .container-70{
+        display: none;
+    }
+}
+
+@media screen and (min-width:801px) and (max-width:1200px){
+    .social{
+        display: none;
+    }
+    .user-account{
+        width: 100%;
+        justify-content: center;
+
+        i{
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width:1201px) and (max-width: 1900px){
 
     .social{
         display: none;
