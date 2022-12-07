@@ -74,6 +74,9 @@ import LatestReviews from './another-comp/main/LatestReviews.vue';
 section{
     padding: 60px 0px;
 }
+.discount{
+    background-color: azure;
+}
 .evidence{
     display: flex;
     padding: 60px 0px;

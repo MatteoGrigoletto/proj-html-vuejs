@@ -47,4 +47,15 @@
     }
 
 }
+
+//  MEDIA QUERIES 
+
+@media screen and (max-width:1900px){
+    .title-section{
+
+        &::after, &::before{
+            display: none;
+        }
+}
+}
 </style>

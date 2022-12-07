@@ -64,14 +64,32 @@ import TitleSection from './TitleSection.vue';
     .container-blog{
         display: flex;
         padding: 50px 0px;
+        
         .blog{
             width: calc(100% / 3 - 30px);
             margin: 15px;
+            padding: 5px;
+            background-color: rgb(247, 239, 239);
             .blog-text{
 
                 > *{
                     padding: 10px 0px;
                 }
+            }
+        }
+    }
+}
+
+//  MEDIA QUERIES 
+
+@media screen and (max-width:1200px){
+
+.container-70{
+    .container-blog{
+        flex-wrap: wrap;
+        .blog{
+            width: 100%;
+            text-align: center;
             }
         }
     }

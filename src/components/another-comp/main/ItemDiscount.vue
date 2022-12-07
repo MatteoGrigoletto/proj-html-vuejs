@@ -1,5 +1,4 @@
 <template>
-    <div class="offers">
         <div class="container-70">
             <div class="best-discount">
                 <h2>70% Off</h2>
@@ -14,7 +13,6 @@
                 <button class="my-button">VIEW MORE</button>
             </div>
         </div>
-    </div>
 </template>
 
 <script>
@@ -24,13 +22,10 @@
 </script>
 
 <style lang="scss" scoped>
-
-.offers{
-    background-color: azure;
     .container-70{
         display: flex;
         
-        > *{
+        > div{
             width: calc(100% / 2 - 40px);
             margin: 20px;
             height: 370px;
@@ -52,5 +47,19 @@
             background-image: url(../../../assets/collections/promo_box_2_bg.jpg);
         }
     }
+
+//  MEDIA QUERIES 
+
+@media screen and (max-width:1200px){
+
+    .container-70{
+        flex-direction: column;
+      
+
+        > div{
+            width: 100%;
+        }
+    }
+
 }
 </style>

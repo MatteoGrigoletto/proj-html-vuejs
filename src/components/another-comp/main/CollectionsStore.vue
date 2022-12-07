@@ -54,4 +54,15 @@
     }
 }
 
+//  MEDIA QUERIES 
+
+@media screen and (max-width:1200px){
+    .container-collection{
+        flex-wrap: wrap;
+
+        >div{
+            width: 100%;
+        }
+    }
+}
 </style>
